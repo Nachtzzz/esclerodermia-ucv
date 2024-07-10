@@ -292,6 +292,10 @@ body {
     .background-bottom{
         background-image: none;
     }
+
+    .imagen-arbol {
+        width: 50%; /* Ajusta el ancho de la imagen para que ocupe todo el ancho del contenedor */
+    }
 }
 
 @media (max-width: 800px) {
@@ -301,6 +305,11 @@ body {
     }
 
     .imagen {
+        margin-left: 0; /* Elimina el margen izquierdo */
+        width: 100%; /* Ajusta el ancho de la imagen para que ocupe todo el ancho del contenedor */
+    }
+
+    .imagen-arbol {
         margin-left: 0; /* Elimina el margen izquierdo */
         margin-top: 20px; /* Añade un margen superior para separar del texto */
         width: 100%; /* Ajusta el ancho de la imagen para que ocupe todo el ancho del contenedor */
