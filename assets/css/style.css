@@ -263,6 +263,10 @@ body {
     margin-right: 20px;
 }
 
+.imagen-check {
+    width: 35px; /* Ajusta el tamaño según tus necesidades */
+}
+
 
 .texto {
     max-width: 600px;
