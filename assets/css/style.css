@@ -377,3 +377,48 @@ body {
     margin-top: auto; /* Añadido para que el footer siempre esté al final */
 }
 
+/* Animaciones */
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.texto-1, .imagen {
+    opacity: 0;
+}
+
+.texto-1.visible, .imagen.visible {
+    animation: slideIn 1s forwards;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    max-height: 400px; /* Ajusta la altura máxima según tus necesidades */
+}
+
+.carousel-image {
+    width: auto;
+    max-height: 400px; /* Ajusta este valor para mantener una altura constante */
+    object-fit: cover; /* Asegura que la imagen mantenga su proporción */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+.horizontal-list {
+    padding: 0;
+    margin-left: 30px;
+    display: flex;
+}
+
+.horizontal-list li{
+    padding: 20;
+}
+
+
